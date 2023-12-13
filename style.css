@@ -1,0 +1,30 @@
+.custom-btn {
+    /* Estilos generales del botón */
+    display: inline-block;
+    background-color: #28a745; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno interno del botón */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+  
+    /* Agregar sombra al botón */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+    /* Transición suave al pasar el ratón */
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: #218838; /* Cambia el color de fondo al pasar el ratón */
+  }
+  
+  .download-link {
+    /* Estilos del enlace dentro del botón */
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none;
+  
+    /* Ajustar estilos según sea necesario */
+  }
