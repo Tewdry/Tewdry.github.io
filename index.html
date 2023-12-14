@@ -65,31 +65,42 @@
     <section id="contact-section" class="dark-section text-dark text-center py-5">
         <div class="container">
             <h2>Contacto</h2>
-            <p>¿Tienes preguntas? ¡Contáctanos!</p>
+            <p>¿Tienes preguntas o quieres darnos tu opinion? <strong>¡Contáctanos!</strong></p>
             <form id="contact-form">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                <div class="input-group">
+                  <span class="input-group-text">Nombre y apellido</span>
+                  <input type="text" aria-label="nombre" placeholder="Ej: Bruce" class="form-control">
+                  <input type="text" aria-label="apellido" placeholder="Wayne" class="form-control">
+                </div>
+                
+                <div class="mb-3 input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="email" class="form-control" placeholder="Correo electronico" aria-label="correo" aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="inputGroupSelect01">¿Te gustó la app?</label>
+                  <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Evaluanos...</option>
+                    <option value="1">Me gustó :D</option>
+                    <option value="2">Ni me gustó ni me disgustó :I</option>
+                    <option value="3">No me gustó >:C</option>
+                  </select>
                 </div>
                 
                 <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <label for="message" class="form-label">Opinion/Consulta/Soporte:</label>
+                    <textarea class="form-control" placeholder="Dejanos aquí tus mensajes" id="message" name="message" rows="4" required></textarea>
                 </div>
                 
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </section>
         
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#03256C;">
         <div class="container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1280px-Logo_DuocUC.svg.png" alt="logo_Duoc" widht="100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1280px-Logo_DuocUC.svg.png" alt="logo_Duoc" widht="100%" height="50px">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
